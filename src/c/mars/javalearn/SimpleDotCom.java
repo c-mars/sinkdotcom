@@ -1,3 +1,4 @@
+package c.mars.javalearn;
 
 class SimpleDotCom {
 	
