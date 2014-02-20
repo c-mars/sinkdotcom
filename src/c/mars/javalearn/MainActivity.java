@@ -9,6 +9,7 @@ public class MainActivity extends Activity
 {
 	private EditText mEditText;
 	private TextView mTextView;
+	String mEnterGuess = "Enter guess here";
 	
     /** Called when the activity is first created. */
     @Override
@@ -31,7 +32,16 @@ public class MainActivity extends Activity
 		mEditText = (EditText)findViewById(R.id.editText);
 		Button b = (Button)findViewById(R.id.button);
 		
-		mEditText.setText("Enter guess here");
+		mEditText.setText(mEnterGuess);
+		mEditText.setOnClickListener(
+			new View.OnClickListener() {
+				public void onClick(View view) {
+					if (mEditText.getText().toString().equals(mEnterGuess))
+						mEditText.setText("");
+					}
+				}
+		);
+		
 		b.setText("Click to guess");
 		b.setOnClickListener( 
 			new View.OnClickListener() {
