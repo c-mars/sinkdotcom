@@ -1,6 +1,6 @@
-package c.mars.javalearn;
+package c.mars.sinkdotcom;
 
-public class SinkDotComGame
+public class Game
 {
 	void play() {
 		int numOfGuesses = 0;

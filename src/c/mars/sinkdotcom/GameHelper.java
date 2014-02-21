@@ -1,4 +1,4 @@
-package c.mars.javalearn;
+package c.mars.sinkdotcom;
 
 public class GameHelper
 {
