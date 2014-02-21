@@ -1,5 +1,6 @@
-package c.mars.javalearn;
+package mars.javalearn;
 
+import c.mars.javalearn.R;
 import android.app.*;
 import android.os.*;
 import android.view.*;

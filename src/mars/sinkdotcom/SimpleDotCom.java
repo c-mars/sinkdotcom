@@ -1,4 +1,4 @@
-package c.mars.sinkdotcom;
+package mars.sinkdotcom;
 
 class SimpleDotCom {
 	
