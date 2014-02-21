@@ -3,6 +3,6 @@ package mars.sinkdotcom;
 public class GameHelper
 {
 	String getUserInput(String prompt){
-		return "";
+		return "This is fake user input. You need override GameHelper method in your praticular helper class";
 	}
 }
