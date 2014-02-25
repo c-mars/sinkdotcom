@@ -2,9 +2,26 @@ package mars.sinkdotcom;
 
 import java.util.ArrayList;
 
-class SimpleDotCom {
+class DotCom {
 	
-	ArrayList<String> locationCells;
+	private ArrayList<String> locationCells;
+	private String mName;
+	
+	public DotCom() {
+		setName("Unnamed.com");
+	}
+	
+	public DotCom(String name) {
+		setName(name);
+	}
+	
+	public void setName(String name) {
+		mName = name;
+	}
+	
+	public String name() {
+		return mName;
+	}
 	
 	public void setLocationCells(ArrayList<String> loc) { 
 		locationCells = loc;
@@ -19,6 +36,7 @@ class SimpleDotCom {
 			locationCells.remove(index);
 			if (locationCells.isEmpty()) {
 				result = "kill";
+				System.out.println("Ouch! You sunk \"" + mName + "\" :(");
 			}
 			else {
 				result = "hit";
